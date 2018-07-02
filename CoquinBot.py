@@ -477,4 +477,4 @@ async def ero(ctx):
 		await bot.say("Vous ne pouvez pas utiliser cette commande dans ce channel")
 
 
-bot.run("NDIxMjUzNTQ5NTgyODQzOTE1.DhvFWQ.TIxJERWoN0Bl7Y64ELVUWJdy-QI")
+bot.run(os.environ.get('BOT_TOKEN'))
