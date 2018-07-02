@@ -12,28 +12,7 @@ bot = commands.Bot(command_prefix=';')
 @bot.event
 async def on_ready():
 	print ("CoquinBot pret")
-	await bot.change_presence(game=discord.Game(name=';commandes'))
-
-@bot.check
-async def botcheck(ctx):
-    return not ctx.message.author.bot
-
-@bot.command(pass_context=True)
-async def commandes(ctx):
-
-	embed = discord.Embed(title="Commandes de CoquinBot", color=0xFF00FF)
-	#embed.set_thumbnail(url=bot.avatar_url)
-	embed.add_field(name="hentai", value="envoie du hentai", inline=False)
-	embed.add_field(name="yuri", value="envoie du yuri", inline=False)
-	embed.add_field(name="trap", value="envoie des trap", inline=False)
-	embed.add_field(name="gif", value="envoie un gif", inline=False)
-
-	msg = await bot.say(embed=embed)
-
-	await bot.add_reaction(msg,"❌")
-	await bot.wait_for_reaction("❌", message=msg, user=ctx.message.author)
-	await bot.delete_message(msg)
-	await bot.delete_message(ctx.message)
+	await bot.change_presence(game=discord.Game(name=';help'))
 
 
 @bot.command(pass_context=True)
