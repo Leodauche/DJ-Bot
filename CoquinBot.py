@@ -68,7 +68,7 @@ async def gif(ctx):
 		await bot.say("Vous ne pouvez pas utiliser cette commande dans ce channel")
 
 @bot.command(pass_context=True)
-async def loli(ctx):
+async def smallboobs(ctx):
 	await bot.delete_message(ctx.message)
 	nsfw = discord.utils.get(ctx.message.server.channels , id="420994817804206080")
 	if (ctx.message.channel == nsfw) :
@@ -190,7 +190,7 @@ async def neko2(ctx):
 
 
 @bot.command(pass_context=True)
-async def boobs2(ctx):
+async def boobs(ctx):
 	await bot.delete_message(ctx.message)
 	nsfw = discord.utils.get(ctx.message.server.channels , id="420994817804206080")
 	if (ctx.message.channel == nsfw) :
