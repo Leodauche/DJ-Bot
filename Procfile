@@ -1,1 +1,1 @@
-worker: python CoquinBot.py
+worker: python DjBot.py
