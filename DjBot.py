@@ -80,4 +80,4 @@ async def play(ctx, url):
 async def say(ctx,*,message):
 	await bot.say(str(message))
 
-bot.run("NDQxMzQ4NTI0ODQ4NzA5NjMy.Dlx5rA.dicKXrX5GYjXnhnA-Dy67itt9RE")
+bot.run(os.environ.get('BOT_TOKEN'))
