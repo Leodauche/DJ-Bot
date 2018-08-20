@@ -1,1 +1,1 @@
-# CoquinBot
+# DjBot
